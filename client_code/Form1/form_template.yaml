@@ -1,5 +1,12 @@
 components:
-- components: []
+- components:
+  - data_bindings:
+    - {code: 'self.item['''']', property: border, writeback: false}
+    event_bindings: {click: my_first_button_click}
+    layout_properties: {grid_position: 'RKGHHT,LYVKAH'}
+    name: my_first_button
+    properties: {role: filled-button, text: Click me, tooltip: Tooltippi}
+    type: Button
   layout_properties: {slot: default}
   name: content_panel
   properties: {col_widths: '{}'}
